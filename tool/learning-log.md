@@ -7,6 +7,8 @@
 ---
 
 ### 10/19/26: Intro to GDScript
+Used the [GDScript documentation](https://gdscript.com/tutorials/)
+
 * GDScript does not need curly braces, {}, or semi-colons, ;, but indentations are helpful.
 * Numbers
     * Enums are used when you don't care about the value automatically assigned by the engine.
@@ -26,8 +28,6 @@
     * Without using `return`, the code continues to the end of the function, and instead returns `null`.
         * However, you don't need to use a return value.
 * A class-type can have its property altered without returning the node value due to its reference nature.
-
-https://gdscript.com/tutorials/numbers/ 
 
 ### X/X/XX:
 * Text
