@@ -1,13 +1,33 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **GDScript**
 
-## Project: **X**
+## Project: **Cryptography**
 
 ---
 
-### X/X/XX:
-* Text
+### 10/19/26: Intro to GDScript
+* GDScript does not need curly braces, {}, or semi-colons, ;, but indentations are helpful.
+* Numbers
+    * Enums are used when you don't care about the value automatically assigned by the engine.
+    * Each value is a bit, and every data-type is stored as a certain amount of bits. 
+        * Ex. An integer is 64 bits.
+    * Number wrapping allows you to prevent an error when trying to reach the maximum x-value.
+* Variables
+    * Names will be in ALL lower-case, and connect words with an underscore, `_`
+    * Assign types to variables like so: `var my_greeting: String = "Hello!"`
+    * Global scope variables are available everywhere 
+    * Local scope variables are only available within the functions they are called in.
+* Functions
+    * Built-in functions always have an underscore prefix in the name.
+    * Custom functions will be named similarly to how we name variables.
+* Return values
+    * You have to use `return` to return a value at any point.
+    * Without using `return`, the code continues to the end of the function, and instead returns `null`.
+        * However, you don't need to use a return value.
+* A class-type can have its property altered without returning the node value due to its reference nature.
+
+https://gdscript.com/tutorials/numbers/ 
 
 ### X/X/XX:
 * Text
