@@ -1,8 +1,8 @@
 # Tool Learning Log
 
-## Tool: **GDScript**
+## Tool: **Godot/GDScript**
 
-## Project: **Cryptography**
+## Project: **Mystery/horror game with cryptography puzzles**
 
 ---
 
