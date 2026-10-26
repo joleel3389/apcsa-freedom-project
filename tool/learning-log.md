@@ -24,6 +24,11 @@ Used the [GDScript documentation](https://gdscript.com/tutorials/)
 * Functions
     * Built-in functions always have an underscore prefix in the name.
     * Custom functions will be named similarly to how we name variables.
+    * For example,
+    ```godot
+    func _ready():
+	print("Welcome!")
+    ```
 * Return values
     * You have to use `return` to return a value at any point.
     * Without using `return`, the code continues to the end of the function, and instead returns `null`.
