@@ -9,7 +9,8 @@
 ### 10/19/26: Intro to GDScript
 Used the [GDScript documentation](https://gdscript.com/tutorials/)
 
-* GDScript does not need curly braces, {}, or semi-colons, ;, but indentations are helpful.
+* GDScript does not need curly braces, `{}`, or semi-colons, `;`, but indentations are helpful.
+    * Different from Javascript or Java
 * Numbers
     * Enums are used when you don't care about the value automatically assigned by the engine.
     * Each value is a bit, and every data-type is stored as a certain amount of bits. 
