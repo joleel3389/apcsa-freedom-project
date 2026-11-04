@@ -37,7 +37,7 @@ Used the [GDScript documentation](https://gdscript.com/tutorials/)
 
 In addition to looking at a sneak peek of how basic GDScript is organized, I've downloaded Godot and plan to follow both a [GDScript guide](https://gdquest.github.io/learn-gdscript/) and [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/)
 
-### X/X/XX:
+### 11/2/26:
 * Text
 
 
