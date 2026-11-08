@@ -42,6 +42,7 @@ I installed and connecting Godot to my Github repo with the help of my brother o
 
 <img width="1675" height="1008" alt="2026-11-08 12_06_22-testing-godot" src="https://github.com/user-attachments/assets/9badcd0d-77d2-4734-812f-bf5c7937aff3" />
 
+
 **Using [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/):**
 * Godot bundles a lot of libraries together
 
