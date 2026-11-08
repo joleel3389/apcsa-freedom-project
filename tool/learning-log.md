@@ -37,9 +37,53 @@ Used the [GDScript documentation](https://gdscript.com/tutorials/)
 
 In addition to looking at a sneak peek of how basic GDScript is organized, I've downloaded Godot and plan to follow both a [GDScript guide](https://gdquest.github.io/learn-gdscript/) and [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/)
 
-### 11/2/26:
-* Text
+### 11/2/26: Godot from scratch L3-5
+I installed and connecting Godot to my Github repo with the help of my brother on Debian Linux, testing out a new script file (uses GdScript).
 
+img
+
+**Using [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/):**
+* Godot bundles a lot of libraries together
+
+* Functions
+    * To call a function, you use the exact function name followed by a pair of parentheses, (). 
+        * Inside the parenthese, you can pass an **argument** inside of these parentheses while calling it. This argument may be option or required depending on the function. 
+    * `show()` is a void Godot function that makes something visible (ex. character or item).
+        * If an entity is already visible, calling `show()` again has *no* effect.
+    * `hide()` is a void Godot function that hides your entity. 
+        * Like the show function, an already hidden entity cannot be hidden again with `hide()`. 
+    * `rotate(radians: float)` is a void Godot function that can rotate your entity.
+        * The part inside the parentheses means that the function takes in radians as a `float` data type. 
+For example, define a function using `func` followed by your function name. 
+```godot
+func run():
+    show()
+    rotate(0.5)
+```
+The tab is needed to the computer can properly compute it. Unlike Java or JavaScript, no semi-colons, `;`, or curly braces, `{}` are needed.
+
+**Practice with non-built-in Godot functions:**
+In the following code, the template functions NEED an argument passed in.
+```godot
+func draw_rectangle():
+	move_forward(200)
+	turn_right(90)
+	move_forward(120)
+	turn_right(90)
+	move_forward(200)
+	turn_right(90)
+	move_forward(120)
+```
+This code makes a rectangle with a width of 200 pixels and a height of 120 pixels.
+
+* Writing functions
+    * The name of a function is an **indentifier**, as the name you give one function CAN'T be reused for another function. 
+        * Ex. `func identity():`
+        * Function names/indentifiers CAN'T use spaces or numbers (at the start). They use underscores, `_`, to indicate separation.
+            * Ex. `func hi_hello():`
+        * OR instead of underscores, you can use camelCase. 
+            * Ex. `func hiHello():`
+    * The instructions inside a function can be any code you want to repeat. Any time you call the function, the same exact instructions you put will be ran everytime. 
 
 <!-- 
 * Links you used today (websites, videos, etc)
