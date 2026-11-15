@@ -35,6 +35,10 @@ func draw_rectangle():
 	move_forward(120)
 ```
 
+This same code would be visualized like so:
+
+<img width="800" height="450" alt="2026-11-1510-03-04-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/e62ee718-605d-4188-935b-fad1e45fb04f" />
+
 The function `draw_rectangle()` is tasked to make a rectangle with the dimensions of a width of 200 pixels and a height of 120 pixels. As you can see with this function, you're allowed to use functions within functions. There's also not a formal way to show the closing of your functions.
 
 Another example of using a function within a function can be seen within this code:
@@ -58,6 +62,10 @@ func draw_three_squares():
 	jump(300,300)
 	draw_square()
 ```
+
+This same code would be visualized like so:
+
+<img width="800" height="450" alt="ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/ccd7a076-b62d-481c-aefc-d84ee250bb9a" />
 
 As seen, the first function actually draws a square with a side length of 200 pixels, but when we actually call it three times in the `draw_three_squares()` function, we can see three squares actually being drawn. 
 
