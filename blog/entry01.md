@@ -5,7 +5,7 @@
 
 ---
 
-For my project, I decided to use Godot/GDScript. [Godot](https://godotengine.org/) is a 2D/3D game engine. Prior, I was considering [JavaFX](https://openjfx.io/), but the reason why I chose Godot was because I wanted to make a game that users could learn some basic cybersecurity awareness through cryptography puzzles. This game would teach users the importance of concealing private information online, how to maintain/protect confidentiality, and the usefulness of authentication. 
+For my project, I decided to use Godot/GDScript. [Godot](https://godotengine.org/) is a 2D/3D game engine. Prior to choosing Godot, I was considering [JavaFX](https://openjfx.io/), but the reason why I chose Godot was because I wanted to make a game that users could learn some basic cybersecurity awareness through cryptography puzzles. This game would teach users the importance of concealing private information online, how to maintain/protect confidentiality, and the usefulness of authentication. 
 
 For how I tinkered with my tool, I first decided I should set up Godot on my computer so that down the line, I wouldn't have to worry about setting it up. My installation is shown below:
 
