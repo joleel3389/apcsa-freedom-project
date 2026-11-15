@@ -5,15 +5,15 @@
 
 ---
 
-For my project, I decided to use Godot/GDScript. Godot is a 2D/3D game engine. The reason why I chose Godot was because I wanted to make a game that users could learn some basic cybersecurity awareness through cryptography puzzles. This game would teach users the importance of concealing private information online, how to maintain/protect confidentiality, and the usefulness of authentication. 
+For my project, I decided to use Godot/GDScript. [Godot](https://godotengine.org/) is a 2D/3D game engine. Prior, I was considering [JavaFX](https://openjfx.io/), but the reason why I chose Godot was because I wanted to make a game that users could learn some basic cybersecurity awareness through cryptography puzzles. This game would teach users the importance of concealing private information online, how to maintain/protect confidentiality, and the usefulness of authentication. 
 
 For how I tinkered with my tool, I first decided I should set up Godot on my computer so that down the line, I wouldn't have to worry about setting it up. My installation is shown below:
 
 <img width="1675" height="1008" alt="2026-11-08 12_06_22-testing-godot" src="https://github.com/user-attachments/assets/9badcd0d-77d2-4734-812f-bf5c7937aff3" />
 
-Following my installation of Godot, I began to learn about its main scripting language: GDscript. To learn about GDscript, I used both its [documentation](https://gdscript.com/tutorials/) and a website called [gdquest](https://gdquest.github.io/learn-gdscript/), which provided lessons that help you get adapted to GDscript. It has coding activities that allow me to test out the concepts myself as I tried to code for myself. 
+Following my installation of Godot, I began to learn about its main scripting language: GDscript. To learn about GDscript, I used both its [documentation](https://gdscript.com/tutorials/) and a website called [GDQuest](https://gdquest.github.io/learn-gdscript/), which provided lessons that help you get adapted to GDscript. It has coding activities that allow me to test out the concepts myself as I tried to code for myself. 
 
-One memorable concept I've learned so far are functions in GDscript. For GDscript, functions are done differently than if we were to compare it to JavaScript or Java. It's identifier/name uses underscores, `_`, to indicate separation, or camelCase, but underscores are more commonly used. Some built-in functions even use underscore prefixes in their name. Other than that, these identifiers/names can't use spaces or numbers (at the start) likewise to Java or JavaScript. For example, take this function below:
+One memorable concept I've learned so far are functions in GDscript. For GDscript, functions are done differently than if we were to compare it to JavaScript or Java. Its identifier/name uses underscores, `_`, to indicate separation, or camelCase, but underscores are more commonly used. Some built-in functions even use underscore prefixes in their name. Other than that, these identifiers/names can't use spaces or numbers (at the start) likewise to Java or JavaScript. For example, take this function below:
 
 ```godot
     func _ready():
@@ -67,7 +67,7 @@ This same code would be visualized like so:
 
 <img width="800" height="450" alt="ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/ccd7a076-b62d-481c-aefc-d84ee250bb9a" />
 
-As seen, the first function actually draws a square with a side length of 200 pixels, but when we actually call it three times in the `draw_three_squares()` function, we can see three squares actually being drawn. 
+As seen, the first function draws a square with a side length of 200 pixels, but when we call it three times in the `draw_three_squares()` function, we can see three squares actually being drawn. 
 
 
 
@@ -85,7 +85,7 @@ Below are the skills I've learned while working on my blog:
 * How to learn
     * When first learning my tool, I used websites like the [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/) and [GDScript guide](https://gdquest.github.io/learn-gdscript/) to help gain exposure to the tool. The guides like the GDScript guide were easy to follow, with their own lessons I could code myself. 
 * How to read
-    * When first figuring out how to connect my Github repo to my tool, Godot, I had to read a few documentations that would allow me to do so on Debian Linux. With my brother's help, we both read many documentations to help set up Godot on my computer. Doing so not only helped increase my familiarity with Linux but successfully allowed Godot to work on my home computer. 
+    * When first figuring out how to connect my Github repo to my tool, Godot, I had to read several guides/documentations that would allow me to do so on Debian Linux. With my brother's help, we both read many documentations to help set up Godot on my computer. Doing so not only helped increase my familiarity with Linux but successfully allowed Godot to work on my home computer. 
 
 ### Next steps
 
