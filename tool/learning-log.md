@@ -86,7 +86,7 @@ This code makes a rectangle with a width of 200 pixels and a height of 120 pixel
             * Ex. `func hiHello():`
     * The instructions inside a function can be any code you want to repeat. Any time you call the function, the same exact instructions you put will be ran everytime. 
 
-### 11/20/26: Godot from scratch L6-8
+### 11/16/26: Godot from scratch L6-8
 **Using [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/):**
 
 * Functions can have arguments and parameters
