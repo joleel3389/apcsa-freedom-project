@@ -86,7 +86,81 @@ This code makes a rectangle with a width of 200 pixels and a height of 120 pixel
             * Ex. `func hiHello():`
     * The instructions inside a function can be any code you want to repeat. Any time you call the function, the same exact instructions you put will be ran everytime. 
 
-### x/x/xx: 
+### 11/20/26: Godot from scratch L6-8
+**Using [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/):**
+
+* Functions can have arguments and parameters
+    * Parameters are optional placeholders in a function's code, which are filled every time when the function is called.
+        * They can be numbers, text, etc.
+        * They go inside your parentheses with any name you want, as long as it follows normal naming conventions
+    * Ex. `func draw_square(size):
+        * Parameter goes in the parentheses before the colon
+    * Functions can have multiple parameters/placeholders, separated by commas
+
+For example, we can use a "length" parameter with out `draw_corner()` function
+```godot
+func draw_corner(length):
+    move_forward(length)
+    turn_right(90)
+    move_forward(length)
+```
+Once we draw the local parameter "length", we can use it within our inner functions within `draw_corner()`.
+
+If we wanted multiple parameters, we could do the following with the `draw_rectangle()` function:
+```godot
+func draw_rectangle(length, height):
+	move_forward(length)
+	turn_right(90)
+	move_forward(height)
+	turn_right(90)
+	move_forward(length)
+	turn_right(90)
+	move_forward(height)
+	turn_right(90)
+```
+
+* Variables are labels used to keep track of values that vary over time
+    * Function parameters are considered variables.
+    * Member variables are variables built into Godot, being values atatched to a game entity.
+        * Member variables can have sub-values/variables, accessed using dot operators `.`
+            * Ex. `position` and `scale` have `x` and `y` subvariables, being accessed like so: `position.x = value`
+    * The value of a variable is changed using the equal sign, `=`
+        * The `=` indicates variable assignment, not equality.
+* Regarding the X-axis and Y-axis, the Y-axis is different in code
+    * As the y-axis goes down, it is more positive. Thus, it points downwards.
+    * The origin starts from (0,0)--there are no negative numbers, the axises follow the display pixels for a screen.
+
+For example, we can set the x and y subvalues of `position` to determine where our shape starts:
+```godot
+func run():
+	position.x = 120
+	position.y = 100
+	draw_rectangle(200, 120)
+```
+
+In this case, this code starts to draw a rectangle at position (120,100), with a length of 200 pixels and height of 120 pixels.
+
+The following example will make 3 squares with proportions of 100x100 pixels, all 100 pixels apart and starting at (100,100).
+```godot
+func run():
+	position.x = 100
+	position.y = 100
+	draw_rectangle(100,100)
+	position.x += 200
+	draw_rectangle(100,100)
+	position.x += 200
+	draw_rectangle(100,100)
+```
+
+* The `print()` function is made to output an argument to your output window
+    * Used to access variable values/messages.
+    * Essentially sends information to display on your device screen.
+* To define your own variable, you must use the `var` keyword followed by your desired variable name. To assign it a value, follow up with `=` and your desired value.
+    * Note that `var` stands for variable, like `func` stands for function. This keyword, `var`, only needs to be used *once* per variable after a variable is defined. 
+    * Variables are case-sentitive, so `health` and `Health` would be different variables.
+        * However, you CAN'T create two variables with the same name.
+    * After defining a variable, you can change its value whenever using the same `=` sign for assignment. 
+
 
 
 <!-- 
