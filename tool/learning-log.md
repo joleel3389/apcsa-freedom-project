@@ -229,6 +229,7 @@ func set_angular_speed(new_angular_speed):
 ### xx/xx/xx: Godot from scratch L
 **Using [GDScript guide](https://gdquest.github.io/learn-gdscript/):**
 
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
