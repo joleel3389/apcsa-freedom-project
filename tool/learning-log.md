@@ -43,7 +43,7 @@ I installed and connecting Godot to my Github repo with the help of my brother o
 <img width="1675" height="1008" alt="2026-11-08 12_06_22-testing-godot" src="https://github.com/user-attachments/assets/9badcd0d-77d2-4734-812f-bf5c7937aff3" />
 
 
-**Using [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/):**
+**Using [GDScript guide](https://gdquest.github.io/learn-gdscript/):**
 * Godot bundles a lot of libraries together
 
 * Functions
@@ -87,7 +87,7 @@ This code makes a rectangle with a width of 200 pixels and a height of 120 pixel
     * The instructions inside a function can be any code you want to repeat. Any time you call the function, the same exact instructions you put will be ran everytime. 
 
 ### 11/16/26: Godot from scratch L6-8
-**Using [Godot guide](https://www.gdquest.com/library/gdtour_get_to_know_godot_editor/):**
+**Using [GDScript guide](https://gdquest.github.io/learn-gdscript/):**
 
 * Functions can have arguments and parameters
     * Parameters are optional placeholders in a function's code, which are filled every time when the function is called.
@@ -161,7 +161,73 @@ func run():
         * However, you CAN'T create two variables with the same name.
     * After defining a variable, you can change its value whenever using the same `=` sign for assignment. 
 
+### 11/23/26: Godot from scratch L9-12
+**Using [GDScript guide](https://gdquest.github.io/learn-gdscript/):**
 
+* The `-=` syntax is a shortchut to subtracting a value from a variable.
+* The `+=` syntax is a shortcut to adding a value to a variable.
+
+* Godot has special functions we can customize or add to, such as the `_process()` function which does calculations or continuous actons.
+* When Godot draws on the screen, that's called a frame.
+
+For example, the `_process()` function runs multiple times, for every frame.
+```godot
+func _process(delta):
+	rotate(0.05)
+```
+
+To create a circular motion, we can add the `move_local_x()` function
+```godot
+func _process(delta):
+	rotate(0.05)
+	move_local_x(5)
+```
+
+* Almost everything in your game will have a `_process()` function that runs every frame.
+* A **frame** is an image of the game world on the screen
+    * As frames move, you get the illusion of movement. 
+    * Frames take varying amounts of time to calculate.
+* The `delta` parameter represents a time difference that varies each frame (in seconds), which helps to ensure the game is consistent for everyone.
+    * Multiplying a time-sensitive value by delta makes your function time-dependent over frame-dependent for more relevant movement.
+
+For example, the following code helps to manage the rotation of our character:
+```godot
+func _process(delta):
+	rotate(2*delta)
+	move_local_x(100*delta)
+```
+Our character would smoothly rotate 2 radians per second and in a circle clockwise
+
+* In godot, we comment by using the `#` symbol infront of our comment
+* A variable is a label for a value we can save, change, and read later.
+    * Makes code easier to read
+    * If we define a variable inside of a function, only that function can use it.
+        * Trying to use it outside of its function leads to an error.
+    * Variables defined outside of a function are script-wide functions--they can be accessed anywhere
+
+For example, within the following code there is a scope error: the `set_angular_speed()` function is trying to use a local variable declared in `_process()`...
+```godot
+func _process(delta):
+	var angular_speed = 4
+	rotate(angular_speed * delta)
+
+func set_angular_speed(new_angular_speed):
+	angular_speed = new_angular_speed
+```
+
+To fix it, we can change the code to the following so the variable becomes script-wide:
+```godot
+var angular_speed = 4
+
+func _process(delta):
+	rotate(angular_speed * delta)
+
+func set_angular_speed(new_angular_speed):
+	angular_speed = new_angular_speed
+```
+
+### xx/xx/xx: Godot from scratch L
+**Using [GDScript guide](https://gdquest.github.io/learn-gdscript/):**
 
 <!-- 
 * Links you used today (websites, videos, etc)
